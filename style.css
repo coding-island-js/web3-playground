@@ -60,9 +60,24 @@ select,
   }
 }
 
-main {
+body {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr;
+}
+
+header {
+  grid-row: 1 / 2;
+  background: black;
+  color: white;
+  padding: 2vw;
+}
+
+main {
+  grid-row: 2 / 3;
+  padding: 2vw;
+  margin: 2vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .gas-price {
@@ -70,5 +85,19 @@ main {
 }
 
 .eth-price {
-  grid-column: 2 / 3;
+  grid-column: 3 / 4;
+}
+
+.trend {
+  grid-column: 4 / 5;
+}
+
+.usd-price {
+  grid-column: 5 / 6;
+}
+
+.header {
+  text-align: center;
+  font-size: larger;
+  background-color: beige;
 }
