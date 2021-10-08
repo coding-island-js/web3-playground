@@ -16,3 +16,4 @@ simple tool that:
 - api.cryptonator.com is the exchange rate API I am using
   - it is free and prices are updated every 30 seconds
   - for a real-time exchange rate, I think you have to use another API which most likely costs money
+

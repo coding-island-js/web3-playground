@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>web3 playground</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>web3.js gas price tracker</h1>
+      <nav>
+        <a href="/index.html">home</a>
+        <a>about</a>
+      </nav>
+    </header>
+    <main class="test">
+      <h1 id="web3-js-gas-price-tracker">web3.js gas price tracker</h1>
+      <br>
+      <h2 id="about">about</h2>
+      <br>
+      <p>simple tool that:</p>
+      <ul>
+        <li>gets the gas price from web3.js in wei every 1 second</li>
+        <li>converts wei to gwei</li>
+        <li>converts wei to eth</li>
+        <li>
+          calculates the difference between the current gas price and last gas
+          price from 1 second ago
+        </li>
+        <li>
+          converts the eth to USD using a cryptocurrency exchange rate api
+        </li>
+      </ul>
+      <h2 id="disclaimer">disclaimer</h2>
+      <ul>
+        <li>
+          web3.js calculates the gas price in wei using the median price of the
+          last few blocks
+        </li>
+        <li>
+          api.cryptonator.com is the exchange rate API I am using
+          <ul>
+            <li>it is free and prices are updated every 30 seconds</li>
+            <li>
+              for a real-time exchange rate, I think you have to use another API
+              which most likely costs money
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h3 id="created-by-">created by:</h3>
+      <br>
+      <p>
+        <a href="https://twitter.com/codingraj"
+          ><img
+            src="https://img.shields.io/twitter/url/https/twitter.com/codingraj.svg?style=social&amp;label=%20%40codingraj"
+            alt="Twitter URL"
+        /></a>
+      </p>
+    </main>
+  </body>
+</html>

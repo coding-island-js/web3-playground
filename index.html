@@ -12,34 +12,38 @@
   <body>
     <header>
       <h1>web3.js gas price tracker</h1>
+      <nav>
+        <a href="/index.html">home</a>
+        <a href="/about.html">about</a>
+      </nav>
     </header>
     <main>
       <div class="gas-price">
-        <p class="header">gas (wei):</p>
+        <p class="column-header">gas wei:</p>
         <ul id="parent">
           <div id="timeout"></div>
         </ul>
       </div>
       <div class="gwei-price">
-        <p class="header">gas (gwei):</p>
+        <p class="column-header">gas gwei:</p>
         <ul id="parent-gwei">
           <div id="timeout-gwei"></div>
         </ul>
       </div>
       <div class="eth-price">
-        <p class="header">gas (eth):</p>
+        <p class="column-header">gas eth:</p>
         <ul id="parent-eth">
           <div id="timeout-eth"></div>
         </ul>
       </div>
       <div class="trend">
-        <p class="header">trend:</p>
+        <p class="column-header">trend:</p>
         <ul id="parent-trend">
           <div id="timeout-trend"></div>
         </ul>
       </div>
       <div class="usd-price">
-        <p class="header">usd:</p>
+        <p class="column-header">usd:</p>
         <ul id="parent-usd">
           <div id="timeout-usd"></div>
         </ul>
