@@ -1,56 +1,15 @@
 /* Box sizing rules */
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
-}
-
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-.logo-title {
   margin: 0;
-}
-
-/* Set core root defaults */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Set core body defaults */
-body {
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
-}
-
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
-
-/* Make images easier to work with */
-img,
-picture {
-  max-width: 100%;
-  display: block;
-}
-
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select,
-.logo-title {
-  font: inherit;
+  padding: 0;
 }
 
 body {
   display: grid;
   grid-template-rows: auto 1fr;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
 }
 
 header {
@@ -69,7 +28,7 @@ main {
 
 main:not([class]) {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr auto auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .gas-price {
@@ -77,15 +36,15 @@ main:not([class]) {
 }
 
 .eth-price {
+  grid-column: 2 / 3;
+}
+
+.usd-price {
   grid-column: 3 / 4;
 }
 
 .trend {
   grid-column: 4 / 5;
-}
-
-.usd-price {
-  grid-column: 5 / 6;
 }
 
 .column-header {
@@ -102,8 +61,6 @@ nav a {
   display: inline-block;
   padding: 0.4rem 0.4rem;
   text-decoration: none;
-  font-family: var(--font-family-primary);
-  font-size: var(--font-size-sm);
   line-height: 1.1;
   color: black;
 }
