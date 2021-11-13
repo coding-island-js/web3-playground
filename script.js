@@ -1,3 +1,4 @@
+// free web3 provider from cloudflare
 const web3 = new Web3("https://cloudflare-eth.com");
 
 // this variable will be the HTML ID value for the gas prices.
